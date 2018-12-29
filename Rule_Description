@@ -1,0 +1,44 @@
+APPENDIX: Rules for selecting candidate sentences 
+
+Following the identification of the 12 seed terms (“future,” “further,” “additional,” “will,” “would,” “additional,” “need,” “needs,” “needed,” “remain,” “warrant,” and “warrants”), rules were developed to determine if a sentence containing any of these terms should be selected as a candidate for further analysis. Overall, the rules are based on the term pattern around each seed term. 
+
+The following three groups of terms were identified as specifically relevant to our choice. 
+
+Name of list	Terms
+
+- Positive nouns:	"research", "analysis", "analyses", "study", "studies", "work", "works", "direction", "directions", "effort", "efforts", "investigation", "investigations", "experiment", "experiments", "test", "tests", "testing", "step", "steps", "understanding", "assessment", "development", "developments", "elucidation", "verification", “data”, “evidence”, “evidences”, “approach”, “approaches”
+- Positive verbs:	“determine”, "examine", "decide", "investigate", "answer", "probe", "explore", "revisit", "analyze", "elucidate", "define", "test", "apply", "extend", "resolve", "settle", "consider"
+- Positive others:	"be", "need", "require", "interesting", "interest", "necessary", "important", "needed", "require", "required", "help", "enable", "enabled", "continued", "worthwhile"
+- Negative terms	"present", "past", "current", "previous"
+
+The score for each seed term in a sentence was calculated based on the following rules. All scores for the same sentence were added up as the final score for the target sentence. If the score is larger than 0, then the sentence is determined to be a candidate sentence.
+
+Seed term	Scoring rules
+- “future”	
+1.	The presence of Positive nouns minus the presence of Negative terms in position +1 to +5 after the seed term (V1)
+2.	The presence of “in the” in position -3 to -1 before the seed term (V2)
+3.	The presence of Positive nouns in position -9 to +9 around the seed term (V3)
+Final score = V1 + (V2 * V3)
+
+- “further” and “additional”	
+1.	The presence of Positive nouns minus the presence of Negative terms in position +1 to +5 after the seed term (V1)
+2.	The presence of “to” in the position ahead of the seed term (V2)
+Final score = V1 * V2
+
+- “will” and “would”	
+1.	The frequency of occurrence of Positive others in position +1 to +5 after the seed term (V1)
+2.	The frequency of occurrence of Positive nouns and Positive verbs in position -7 to +7 around the seed term (V2)
+Final score = V1 + V2 - 2
+
+- “remain,” “remains,” “need,” and “needs”	
+1.	The presence of “to be” in the position +1 to +4 after the seed term (V1)
+2.	The presence of Positive nouns and Positive verbs in position -7 to +7 around the seed term (V2)
+Final score = V1 * V2
+
+- “needed”	
+1.	The presence of Positive nouns and Positive verbs in position -7 to -1 before the seed term (V1)
+Final score = V1
+
+- “warrant” and “warrants”	
+1.	The presence of Positive nouns in position +1 to +7 after the seed term (V1)
+Final score = V1
